@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How it works - Z-app Video Scheduler</title>
+<meta name="description" content="How Z-app Video Scheduler renders and publishes videos to YouTube, Instagram and TikTok.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:title" content="How it works - Z-app Video Scheduler">
+<meta property="og:description" content="How Z-app Video Scheduler renders and publishes videos to YouTube, Instagram and TikTok.">
+<meta property="og:image" content="https://arpinator.github.io/video-scheduler/assets/app-icon-1024.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="index.html"><img src="assets/app-icon-1024.png" alt="Z-app logo">Z-app Video Scheduler</a>
+  <nav><a href="index.html">Home</a><a href="how-it-works.html" class="active">How it works</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+</div></header>
+<main class="wrap doc">
+  <h1>How it works</h1>
+  <p class="muted">Z-app Video Scheduler is a personal publishing tool. It is used only by its developer, for the developer's own channels. There is no public sign-up.</p>
+
+  <h2>Publishing flow</h2>
+  <ol class="steps">
+    <li><strong>Write the script.</strong> Each episode is a short script with scenes, narration and on-screen text.</li>
+    <li><strong>Render.</strong> An automated job renders the script into a vertical 9:16 video with animation, captions and a voice-over.</li>
+    <li><strong>Publish.</strong> The same job uploads the finished video with its title and caption to YouTube (YouTube Data API), Instagram (Instagram Graph API) and TikTok (TikTok Content Posting API).</li>
+    <li><strong>Schedule.</strong> Jobs run automatically on a weekly schedule, at 6am UK time.</li>
+  </ol>
+
+  <h2>TikTok integration</h2>
+  <p>The tool uses <strong>TikTok Login Kit</strong> so the account owner can authorise it once, and the <strong>Content Posting API</strong> to publish videos to that same account. It requests only these scopes:</p>
+  <ul>
+    <li><code>user.info.basic</code>: to show which TikTok account is connected.</li>
+    <li><code>video.publish</code>: to post the creator's own videos to their own account.</li>
+  </ul>
+  <p>Before each post, the creator chooses the privacy level, whether comments, duets and stitches are allowed, and any content disclosure, following TikTok's posting guidelines. Videos created with AI tools are labelled as AI-generated.</p>
+
+  <h2>Data</h2>
+  <p>The tool does not collect data from viewers or any other users. Access tokens are stored as encrypted secrets and used only to publish. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+</main>
+<footer><div class="wrap">
+  <div><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="mailto:arpishke@gmail.com">Contact</a></div>
+  <div>&copy; 2026 Z-app Video Scheduler</div>
+</div></footer>
+</body>
+</html>

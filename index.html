@@ -3,20 +3,61 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Video Scheduler</title>
-<style>
-  body { font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; color: #222; }
-  a { color: #0b57d0; }
-</style>
+<title>Z-app Video Scheduler</title>
+<meta name="description" content="Z-app Video Scheduler publishes short vertical videos to YouTube, Instagram and TikTok on a weekly schedule.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:title" content="Z-app Video Scheduler">
+<meta property="og:description" content="Z-app Video Scheduler publishes short vertical videos to YouTube, Instagram and TikTok on a weekly schedule.">
+<meta property="og:image" content="https://arpinator.github.io/video-scheduler/assets/app-icon-1024.png">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Video Scheduler</h1>
-<p>Video Scheduler is a personal automation tool that uploads and schedules short videos created by its owner to the owner's own YouTube channel (using the YouTube Data API) and to the owner's own TikTok account (using TikTok Login Kit and the Content Posting API).</p>
-<p>It is not offered to the public and is used only by its developer. It does not collect any data from other users.</p>
-<ul>
-  <li><a href="privacy.html">Privacy Policy</a></li>
-  <li><a href="terms.html">Terms of Service</a></li>
-</ul>
-<p>Contact: <a href="mailto:arpishke@gmail.com">arpishke@gmail.com</a></p>
+<header><div class="wrap">
+  <a class="brand" href="index.html"><img src="assets/app-icon-1024.png" alt="Z-app logo">Z-app Video Scheduler</a>
+  <nav><a href="index.html" class="active">Home</a><a href="how-it-works.html">How it works</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+</div></header>
+<main class="wrap">
+  <div class="hero">
+    <div>
+      <h1>Short videos, <span>published on schedule</span>.</h1>
+      <p>Z-app Video Scheduler is the publishing tool behind the Zoldi channel. It renders short vertical videos from a script and posts them automatically to the creator's own YouTube, Instagram and TikTok accounts, every week.</p>
+      <a class="btn" href="how-it-works.html">See how it works</a>
+    </div>
+    <img src="assets/app-icon-1024.png" alt="Z-app icon">
+  </div>
+
+  <section>
+    <h2>What it does</h2>
+    <div class="grid">
+      <div class="card"><h3>Script to video</h3><p>Each episode starts as a short script. The tool renders it into a 1 to 1.5 minute vertical video with animation, captions and voice-over.</p></div>
+      <div class="card"><h3>Weekly schedule</h3><p>Videos go out on fixed days at 6am UK time, so the channel stays consistent without manual uploads.</p></div>
+      <div class="card"><h3>One run, every platform</h3><p>A single publishing run posts the same video, title and caption to YouTube, Instagram Reels and TikTok.</p></div>
+      <div class="card"><h3>Own accounts only</h3><p>The tool posts only to accounts owned by its creator, using each platform's official API and the creator's own authorisation.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What gets published</h2>
+    <div class="grid">
+      <div class="card"><h3>Tech News</h3><p>A one-minute bulletin of three stories from AI, Kubernetes, cloud and infrastructure.</p></div>
+      <div class="card"><h3>Tech Tips</h3><p>Practical DevOps and infrastructure tips explained in 90 seconds with charts and a cartoon mascot.</p></div>
+      <div class="card"><h3>Detective Z</h3><p>A mouse detective solves a short mystery each episode.</p></div>
+      <div class="card"><h3>Cat stories</h3><p>Funny animated stories about a real house cat and his daily antics.</p></div>
+      <div class="card"><h3>Last Stop</h3><p>A choose-your-path horror series where viewers pick the next turn in the comments.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Follow the channel</h2>
+    <p class="muted">New videos every Thursday to Monday. Find them on Instagram at <a href="https://www.instagram.com/zoldi902026/">@zoldi902026</a>, on YouTube and on TikTok.</p>
+  </section>
+</main>
+<footer><div class="wrap">
+  <div><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="mailto:arpishke@gmail.com">Contact</a></div>
+  <div>&copy; 2026 Z-app Video Scheduler</div>
+</div></footer>
 </body>
 </html>
