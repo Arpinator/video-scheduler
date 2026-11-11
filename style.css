@@ -45,7 +45,7 @@ ol.steps li { margin-bottom: 12px; }
 .muted { color: var(--muted); }
 code { background: var(--panel); padding: 1px 6px; border-radius: 5px; font-size: .9em; }
 
-.doc { padding: 40px 0; max-width: 760px; }
+.doc { padding-top: 40px; padding-bottom: 40px; max-width: 760px; }
 .doc h1 { margin-top: 0; }
 
 footer { border-top: 1px solid var(--line); margin-top: 40px; }
